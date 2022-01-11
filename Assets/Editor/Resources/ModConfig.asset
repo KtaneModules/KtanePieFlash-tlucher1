@@ -16,6 +16,6 @@ MonoBehaviour:
   author: tlucher1
   description: "Use 15 digits of \u03C0 to figure out which order to press the buttons
     in. Tags: circuit-board, pi, green-numbers"
-  version: 1.0.1
+  version: 1.0.2
   outputFolder: build
   previewImage: {fileID: 2800000, guid: 92c4d5914dce8a943b2618260558fe89, type: 3}

@@ -372,7 +372,7 @@ public class pieFlashScript : MonoBehaviour {
 			}
 			else
 			{
-				yield return "sendtochaterror Ypu must push every button exactly once in one command.";
+				yield return "sendtochaterror You must push every button exactly once in one command.";
 			}
 		}
     }
