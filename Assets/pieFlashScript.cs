@@ -246,7 +246,10 @@ public class pieFlashScript : MonoBehaviour {
 		solution = new int[] { -1, -1, -1, -1, -1 };
 
 		// If X and Y are both prime or both composite
-		if (primesUnderHundred.Contains(x) == primesUnderTen.Contains(y))
+		// BUG FIX: If X or Y equal 0 or 1, this condition should be false. 0 and 1 are neither prime nor composite.
+		if (primesUnderHundred.Contains(x) == primesUnderTen.Contains(y)
+		 && !(x <= 1) 
+		 && !(y <= 1))
 		{
 			solution[solutionIndex] = 5;
 			solutionIndex++;
